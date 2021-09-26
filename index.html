@@ -26,11 +26,11 @@
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 
-
     <title>공유 여행 기록장</title>
 
     <!-- style -->
     <style type="text/css">
+        /* 전체 */
         * {
             font-family: "Stylish", sans-serif;
         }
@@ -40,24 +40,17 @@
             margin: auto;
         }
 
-        .comment {
-            color: blue;
-            font-weight: bold;
+        /* header - 메뉴 */
+        .menu > a {
+            width: 500px;
+            height: 300px;
+            background-color: green;
         }
 
+
+        /* 본문 */
         .form-group {
 
-        }
-
-        /* datepicker */
-        label {
-            display: block;
-            font: 1rem 'Fira Sans', sans-serif;
-        }
-
-        input,
-        label {
-            margin: .4rem 0;
         }
 
 
@@ -80,60 +73,19 @@
 
 <body>
 
-
 <div class="wrap">
+    <!--header-->
     <div class="jumbotron">
-        <h1 class="display-4">나홀로 링크 메모장!</h1>
-        <p class="lead">중요한 링크를 저장해두고, 나중에 볼 수 있는 공간입니다</p>
+        <h1 class="display-4">공유 여행 기록장!</h1>
+        <p class="lead">삭제와 수정이 안되니 유념하여 작성부탁드립니다~</p>
         <hr class="my-4">
-
-    </div>
-    <div class="form-post" id="post-box" style="">
-        <div>
-            <div class="form-group">
-                <label for="post-writer"></label>
-                <input class="form-control" id="post-writer" placeholder="작성자">
-            </div>
-            <div class="form-group">
-                <label for="post-place"></label>
-                <input class="form-control" id="post-place" placeholder="장소">
-            </div>
-            <div class="form-group">
-                <label for="post-title"></label>
-                <input class="form-control" id="post-title" placeholder="제목">
-            </div>
-
-            <!--날짜-->
-            <div class="form-group">
-                <label for="post-date"></label>
-                <input type="date" class="form-control" id="post-date" name="trip-start"
-                   placeholder="날짜 선택" >
-            </div>
-
-            <!--날씨-->
-            <div class="input-group">
-                <select class="custom-select" id="order-number">
-                    <option selected>날씨 선택</option>
-                    <option value="1">☀️</option>
-                    <option value="2">⛅</option>
-                    <option value="3">☁️</option>
-                    <option value="4">⛈️</option>
-                    <option value="5">☔</option>
-                    <option value="6">🌧️</option>
-                    <option value="7">🌩️</option>
-                    <option value="8">❄️</option>
-                </select>
-            </div>
-
-            <div class="form-group-comment">
-                <label for="post-comment">간단 코멘트</label>
-                <textarea class="form-control" id="post-comment" rows="2"></textarea>
-            </div>
-            <button class="btn btn-primary" onclick="postArticle()" type="button">기록 저장</button>
+        <div class="menu">
+            <a class="menu1" href="index.html?">홈</a>
+            <a class="menu2" href="result.html?page=1">기록 작성하기</a>
         </div>
     </div>
-    <div class="card-columns" id="cards-box">
-    </div>
+
+
 </div>
 
 </body>
