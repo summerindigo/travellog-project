@@ -41,10 +41,24 @@
         }
 
         /* header - 메뉴 */
+        .menu {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 850px;
+            margin: auto;
+        }
+
         .menu > a {
-            width: 200px;
-            height: 100px;
-            background-color: green;
+            display: block;
+            width: 120px;
+            height: 50px;
+            border-radius: 10px;
+            padding: 10px 10px 10px 10px;
+            margin-left: 20px;
+            background-color: ivory;
         }
 
 
@@ -80,10 +94,10 @@
         <h1 class="display-4">공유 여행 기록장!</h1>
         <p class="lead">삭제와 수정이 안되니 유념하여 작성부탁드립니다~</p>
         <hr class="my-4">
-        <div class="menu">
+        <nav class="menu">
             <a class="menu1" href="index.html?">홈</a>
             <a class="menu2" href="result.html?page=1">기록 작성하기</a>
-        </div>
+        </nav>
     </div>
 
     <!--본문 부분: 기록 작성-->
