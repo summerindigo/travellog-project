@@ -1,4 +1,4 @@
-# travellog-project 
+# travellog-project by 코우파
 
 # 공유 여행 기록장 페이지 만들기
 
